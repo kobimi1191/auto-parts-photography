@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Parts Photography Cheat Sheet - Print Version</title>
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+        
+        @media print {
+            body { 
+                margin: 0;
+                padding: 0;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .page {
+                page-break-after: always;
+                page-break-inside: avoid;
+            }
+            .no-break {
+                page-break-inside: avoid;
+            }
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            font-size: 11pt;
+            line-height: 1.3;
+            color: #000;
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .page {
+            width: 7.5in;
+            min-height: 10in;
+            padding: 0.25in;
+            margin: 0 auto 0.5in auto;
+            background: white;
+            border: 1px solid #ccc;
+        }
+        
+        .header {
+            background: #000;
+            color: white;
+            padding: 12px;
+            text-align: center;
+            margin-bottom: 12px;
+            border: 3px solid #000;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 24pt;
+            font-weight: bold;
+        }
+        
+        .header p {
+            margin: 3px 0 0 0;
+            font-size: 10pt;
+        }
+        
+        .section {
+            border: 2px solid #000;
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #fff;
+        }
+        
+        .section-title {
+            background: #000;
+            color: white;
+            padding: 6px 10px;
+            margin: -10px -10px 8px -10px;
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        
+        .critical {
+            border: 3px solid #000;
+            background: #f5f5f5;
+        }
+        
+        .critical .section-title {
+            background: #000;
+        }
+        
+        .warning {
+            border: 2px solid #666;
+            background: #fafafa;
+        }
+        
+        .two-col {
+            display: table;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .col {
+            display: table-cell;
+            width: 50%;
+            padding: 8px;
+            vertical-align: top;
+            border: 1px solid #000;
+        }
+        
+        .col h3 {
+            margin: 0 0 6px 0;
+            font-size: 11pt;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        .col ul, .section ul {
+            margin: 0;
+            padding-left: 18px;
+        }
+        
+        .col li, .section li {
+            margin: 3px 0;
+            font-size: 10pt;
+            line-height: 1.3;
+        }
+        
+        .checklist {
+            list-style: none;
+            padding: 0;
+            margin: 5px 0;
+        }
+        
+        .checklist li {
+            padding: 4px 4px 4px 25px;
+            margin: 3px 0;
+            border-left: 3px solid #000;
+            position: relative;
+            font-size: 10pt;
+        }
+        
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 5px;
+            font-size: 14pt;
+            font-weight: bold;
+        }
+        
+        .shot-guide {
+            display: table;
+            width: 100%;
+            margin: 16px 0;
+            border-collapse: collapse;
+        }
+        
+        .shot {
+            display: table-cell;
+            width: 33.33%;
+            text-align: center;
+            padding: 10px;
+            border: 2px solid #000;
+            vertical-align: middle;
+        }
+        
+        .shot-number {
+            font-size: 36pt;
+            font-weight: bold;
+            line-height: 1;
+            margin-bottom: auto;
+        }
+        
+        .shot-label {
+            font-weight: bold;
+            font-size: 11pt;
+            margin: 4px 0;
+        }
+        
+        .shot-detail {
+            font-size: 9pt;
+            margin: auto 0;
+        }
+        
+        table.troubleshoot {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 5px 0;
+        }
+        
+        table.troubleshoot th {
+            background: #000;
+            color: white;
+            padding: 6px;
+            text-align: left;
+            font-size: 10pt;
+            border: 1px solid #000;
+        }
+        
+        table.troubleshoot td {
+            padding: 5px;
+            border: 1px solid #000;
+            font-size: 9pt;
+            vertical-align: top;
+        }
+        
+        .alert-box {
+            background: #000;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            margin: 8px 0;
+            border: 3px solid #000;
+        }
+        
+        .target-box {
+            text-align: center;
+            padding: 15px;
+            border: 3px solid #000;
+            margin: 10px 0;
+        }
+        
+        .target-number {
+            font-size: 48pt;
+            font-weight: bold;
+            line-height: 1;
+            margin: 0;
+        }
+        
+        .target-label {
+            font-size: 12pt;
+            font-weight: bold;
+            margin: 5px 0 0 0;
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        .footer {
+            text-align: center;
+            font-size: 8pt;
+            color: #666;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- PAGE 1 -->
+<div class="page">
+    <div class="header">
+        <h1>AUTO PARTS PHOTOGRAPHY QUICK REFERENCE</h1>
+        <p>Keep This Laminated At Your Station</p>
+    </div>
+
+    <div class="section critical no-break">
+        <div class="section-title">🚨CAMERA SETTINGS</div>
+        <div class="two-col">
+            <div class="col">
+                <h3>Camera Settings</h3>
+                <ul>
+                    <li><strong>Mode:</strong> Manual (M)</li>
+                    <li><strong>ISO:</strong> 100</li>
+                    <li><strong>Aperture:</strong> Nothing lower than f/11</li>
+                    <li><strong>White Balance:</strong>Manual</li>
+                    <li><strong>Focus:</strong> Manual or Single AF</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Physical Setup</h3>
+                <ul>
+                    <li>Camera on tripod</li>
+                    <li>Lights in correct position</li>
+                    <li>Backdrop clean and smooth</li>
+                    <li>Tethered to monitor</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section no-break">
+        <div class="section-title">✓ STANDARD WORKFLOW - EVERY PART</div>
+        <ul class="checklist">
+	    <li>Check focus on monitor (zoom 10x to verify)</li>
+            <li>Take PKG shot (must be able to clearly read part numbers</li>
+            <li>Clean part (remove dust, fingerprints, stickers)</li>
+            <li>Take Shot 1 - Front View (0°) DO NOT SHOOT ABOVE THE PART</li>
+            <li>Rotate part to show the first three sides</li>
+            <li>Take Shot 2 - Isometric perspective angle #1</li>
+            <li>Rotate and/or flip part to show the opposite three sides.</li>
+            <li>Take Shot 3 - Isometric perspective angle #2</li>
+	    <li>Take Shot 4 (if required) - Alternate angle shot of any connections, plugs, etc. missed in other shots</li>
+            <li>Review ALL shots on monitor before removing part</li>
+            <li>If any shot is blurry or bad - RESHOOT NOW</li>
+            <li>Move to next part</li>
+        </ul>
+    </div> 
+
+
+
+    <div class="section no-break">
+        <div class="section-title">THE 3 REQUIRED SHOTS</div>
+        <div class="shot-guide">
+            <div class="shot">
+                <div class="shot-number">1</div>
+                <div class="shot-label">FRONT VIEW</div>
+                <div class="shot-detail">Primary angle
+		0° position</div>
+            </div>
+            <div class="shot">
+                <div class="shot-number">2</div>
+                <div class="shot-label">ISOMETRIC ANGLE 1</div>
+                <div class="shot-detail">Three sides in view<br>Shows depth<br></div>
+            </div>
+            <div class="shot">
+                <div class="shot-number">3</div>
+                <div class="shot-label">ISOMETRIC ANGLE 2</div>
+                <div class="shot-detail">Opposite three sides in view<br>Shows depth</div>
+            </div>
+	    <div class="shot">
+                <div class="shot-number">4</div>
+                <div class="shot-label">IF NEEDED</div>
+                <div class="shot-detail">missed connectors/plugs<br></div>
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="section no-break">
+        <div class="section-title">🔍 QUALITY CHECK BEFORE REMOVING PART</div>
+        <ul class="checklist">
+            <li>All 3 shots captured and visible on monitor</li>
+            <li>Part is IN FOCUS (zoom 10x to check edges)</li>
+            <li>Entire part visible in frame (not cropped)</li>
+            <li>No harsh shadows or dark spots</li>
+            <li>No reflections or hotspots (for metal parts)</li>
+            <li>Background is clean white</li>
+        </ul>
+        <div class="alert-box">
+            IF ANY SHOT FAILS → RESHOOT IMMEDIATELY
+        </div>
+    </div>
+
+    <div class="footer">
+        Page 1 of 4 | Version 1.0 | October 2025
+    </div>
+</div>
+
+<!-- PAGE 2 -->
+<div class="page">
+    <div class="header">
+        <h1>SPECIAL SITUATIONS</h1>
+        <p>Reflective Parts & Large Parts</p>
+    </div>
+
+    <div class="section warning no-break">
+        <div class="section-title">⚠️ REFLECTIVE PARTS (Chrome, Polished Metal)</div>
+        <div class="two-col">
+            <div class="col">
+                <h3>Common Reflective Parts:</h3>
+                <ul>
+                    <li>Chrome bumpers</li>
+                    <li>Polished alternators</li>
+                    <li>Exhaust tips (stainless)</li>
+                    <li>Pulleys and brackets</li>
+                    <li>Valve covers (chrome)</li>
+                    <li>Any shiny metal surface</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>What To Do:</h3>
+                <ul>
+                    <li>Use diffusion panels on lights</li>
+                    <li>Move lights farther away (48"+)</li>
+                    <li>Check monitor for hotspots</li>
+                    <li>Use dulling spray if needed</li>
+                    <li>Angle lights at 90° not 45°</li>
+                    <li><strong>ASK FOR HELP if unsure</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section warning no-break">
+        <div class="section-title">📦 LARGE PARTS - USE STATION C</div>
+        <div class="two-col">
+            <div class="col">
+                <h3>Large Parts Include:</h3>
+                <ul>
+                    <li>Front/rear bumpers</li>
+                    <li>Hoods and trunk lids</li>
+                    <li>Transmissions</li>
+                    <li>Engine blocks</li>
+                    <li>Full exhaust systems</li>
+                    <li>Large body panels</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Station C Features:</h3>
+                <ul>
+                    <li>Floor sweep backdrop (9ft wide)</li>
+                    <li>Raised camera position</li>
+                    <li>Lights positioned farther back</li>
+                    <li>More workspace for positioning</li>
+                    <li>Use cart/dolly for heavy parts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section no-break">
+        <div class="section-title">🛑 STOP AND GET HELP IF...</div>
+        <ul class="checklist">
+            <li>You've taken 3+ shots and none look good</li>
+            <li>Monitor shows errors or goes blank</li>
+            <li>You're unsure if part is reflective</li>
+            <li>Part is damaged and you notice after shooting</li>
+        </ul>
+        <div style="border: 3px solid #000; padding: 10px; text-align: center; margin-top: 8px;">
+            <strong style="font-size: 12pt;">SUPERVISOR PHONE: _______________</strong>
+        </div>
+    </div>
+
+    <div class="section no-break">
+        <div class="section-title">💡 PRO TIPS</div>
+        <div class="two-col">
+            <div class="col">
+                <h3>Work Smarter:</h3>
+                <ul>
+                    <li>Batch similar sized parts</li>
+                    <li>Clean multiple parts at once</li>
+                    <li>Always use hands-free shooting</li>
+                    <li>Check focus BEFORE all 3 shots</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Avoid Mistakes:</h3>
+                <ul>
+                    <li>❌ Incorrect angles</li>
+                    <li>❌ Not checking monitor</li>
+                    <li>❌ Not checking white balance</li>
+                    <li>❌ Shooting dirty parts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Page 2 of 4 | Version 1.0 | October 2025
+    </div>
+</div>
+
+<!-- PAGE 3 -->
+<div class="page">
+    <div class="header">
+        <h1>TROUBLESHOOTING GUIDE</h1>
+        <p>Quick Fixes for Common Problems</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">PROBLEM → SOLUTION</div>
+        <table class="troubleshoot">
+            <tr>
+                <th style="width: 35%;">Problem</th>
+                <th>Solution</th>
+            </tr>
+            <tr>
+                <td><strong>Image is blurry</strong></td>
+                <td>Check focus on monitor before shooting • Don't touch camera during shot • Use remote trigger or 2-sec timer • Clean lens</td>
+            </tr>
+            <tr>
+                <td><strong>Bright spots (hotspots)</strong></td>
+                <td>Part is reflective - use diffusion panels • Move lights farther away • Apply dulling spray • Ask supervisor</td>
+            </tr>
+            <tr>
+                <td><strong>Part doesn't fit in frame</strong></td>
+                <td>Move camera farther back • Use Station C for large parts • Never crop edges - get full part in shot</td>
+            </tr>
+            <tr>
+                <td><strong>Background looks gray</strong></td>
+                <td>Check camera settings • Lights may have moved • Clean backdrop • Call supervisor</td>
+            </tr>
+            <tr>
+                <td><strong>Part looks dark/shadowy</strong></td>
+                <td>Check lights are on • Verify lights in correct position • Part may block light - reposition • Check camera settings</td>
+            </tr>
+            <tr>
+                <td><strong>Can't see on monitor</strong></td>
+                <td>Check USB cable connected • Monitor powered on • Restart tethering software • Call supervisor</td>
+            </tr>
+            <tr>
+                <td><strong>Chrome showing reflections</strong></td>
+                <td>This is reflective part • Add diffusion panels • See reflective parts section • Ask supervisor</td>
+            </tr>
+            <tr>
+                <td><strong>Unsure which angle</strong></td>
+                <td>Packaging shot is always first. Shot 1: Front view • Shot 2: Rotate/flip to show three sides • Shot 3: Rotate/Flip again to show opposite three sides • Check example photos in guidebook</td>
+            </tr>
+            <tr>
+                <td><strong>Can't tell if in focus</strong></td>
+                <td>Use 10x zoom on monitor • Check edges and details • If unsure, take another shot • Better safe than sorry</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="alert-box">
+        QUALITY OVER SPEED - 30 GOOD PARTS BEATS 50 RESHOOTS
+    </div>
+
+    <div class="footer">
+        Page 3 of 4 | Version 1.0 | October 2025
+    </div>
+</div>
+
+<!-- PAGE 4 -->
+<div class="page">
+    <div class="header">
+        <h1>DAILY PROCEDURES</h1>
+        <p>Startup, Shutdown & Performance</p>
+    </div>
+
+    <div class="section no-break">
+        <div class="section-title">☀️ MORNING STARTUP</div>
+        <ul class="checklist">
+            <li>Turn on all lights - verify both working</li>
+            <li>Turn on computer and monitor</li>
+            <li>Turn on camera - check battery</li>
+            <li>Connect camera to computer (USB)</li>
+            <li>Open tethering software - verify live view</li>
+            <li>Check camera on tripod </li>
+            <li>Verify camera settings </li>
+            <li>Clean backdrop </li>
+            <li>Take 1 test shot - verify quality</li>
+            <li>Once good - DO NOT touch settings unless necessary</li>
+        </ul>
+    </div>
+
+    <div class="section no-break">
+        <div class="section-title">🌙 END OF DAY SHUTDOWN</div>
+        <ul class="checklist">
+            <li>Review final batch for quality</li>
+            <li>Verify all images uploaded</li>
+            <li>Log total parts in file name</li>
+            <li>Turn off camera and lights</li>
+            <li>Cover camera and monitor</li>
+            <li>Clean backdrop area</li>
+            <li>Report equipment issues</li>
+            <li>Note difficult parts for team</li>
+        </ul>
+    </div>
+
+    <div class="section no-break">
+        <div class="section-title">📊 PERFORMANCE TARGET</div>
+        <div class="target-box">
+            <div class="target-number">30+</div>
+            <div class="target-label">PARTS PER DAY</div>
+        </div>
+        <div class="two-col">
+            <div class="col">
+                <h3>Good Performance:</h3>
+                <ul>
+                    <li>30+ parts/day average</li>
+                    <li>Less than 5% reshoot rate</li>
+                    <li>All shots pass quality check</li>
+                    <li>Minimal supervisor help</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Track Daily:</h3>
+                <ul>
+                    <li>Parts today: _______</li>
+                    <li>Hours worked: _______</li>
+                    <li>Per hour: _______</li>
+                    <li>Reshoots: _______</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="border: 3px solid #000; padding: 15px; text-align: center; margin-top: 10px;">
+        <strong style="font-size: 13pt;">REMEMBER: QUALITY OVER SPEED!</strong><br>
+        <span style="font-size: 10pt;">When in doubt - ASK FOR HELP!</span>
+    </div>
+
+    <div class="footer">
+        Page 4 of 4 | Version 1.0 | October 2025 | Report errors to supervisor
+    </div>
+</div>
+
+</body>
+</html>
